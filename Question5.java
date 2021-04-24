@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+
+
 public class Question5
 {
   public static void main(String[] args)
@@ -27,6 +29,64 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+
+    System.out.println("Enter Integer:");
+
+    int enter =  in.nextInt();
     
+    	int [] a=new int[enter];
+	    int [] b=new int[enter];
+      int maxValue = 0;
+      int maxCount = 0;
+      for (int i=0;i<enter;i++ ){
+
+
+       System.out.println("Enter Number:");
+
+       System.out.println("");
+
+       a[i] = in.nextInt();
+
+     
+     
+
+
+
+
+
+
+    }
+    
+     for(int j = 0; j < enter; j++) {
+         
+           int count  = 0;
+
+           for(int k = 0; k < enter; k++) {
+              
+              if (a[k] == a[j]){
+
+               count++;
+
+              }
+             
+             if(count>maxCount){
+
+
+               maxValue = a[j];
+               maxCount = count;
+             }
+               
+
+           }
+          
+           
+            
+          
+            
+
+     }
+    
+
+     System.out.println(maxValue);
   }
 }
