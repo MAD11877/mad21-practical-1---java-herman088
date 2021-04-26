@@ -11,6 +11,14 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
+
+    System.out.println("Enter int:");
+    int integer = in.nextInt();
+
+    System.out.println("Mutiplied integer is "+ integer*integer);
+
+    in.close();
+    
     
   }
 }
